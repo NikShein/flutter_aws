@@ -20,7 +20,7 @@ jobs:
       run: flutter build web
 
     - name: Upload to AWS S3
-      uses: jakejarvis/s3-sync-action@v0.2.4
+      uses: jakejarvis/s3-sync-action@master
       with:
         args: --folow-symlinks --delete
       env:
