@@ -18,8 +18,8 @@ jobs:
       with:
         flutter-version: 3.0.2
 
-    - name: Build Flutter app
-      run: flutter pub get flutter build web
+    - run: flutter pub get
+    - run: flutter build web
 
     - name: Upload to AWS S3
       uses: jakejarvis/s3-sync-action@master
