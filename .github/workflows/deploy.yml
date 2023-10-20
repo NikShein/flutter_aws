@@ -17,7 +17,9 @@ jobs:
       uses: subosito/flutter-action@v2
       with:
         flutter-version: '2.x'
-        run: flutter build web
+    
+    - name: Build Flutter Web
+      run: flutter build web
 
     - name: Upload to AWS S3
       uses: jakejarvis/s3-sync-action@master
